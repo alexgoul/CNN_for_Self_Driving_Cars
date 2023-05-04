@@ -8,4 +8,8 @@ Therefore, we build a convolutional neural network that classify traffic, sign i
 
 First, we import some important libraries for our project. We will use keras to import the necessary layers and optimizer for our convolutional neural network.
 The matplolib.pyplot, seaborn and cv2 will be used to visualize our data and results. We will load our data set with pickle library and pandas to read our csv file.
-Lastly, we import random to generate random numbers and of course numpy. 
+Lastly, we import random to generate random numbers and of course numpy.
+
+**Image Pre-processing**
+We convert the images in to grayscale for reducing the computation, since the colors are not realy important for trafic signs. The important details are the age and shift of the images. Next we apply the histogram equalization technique to standarize the lighting and last we normalize the pixel between zero and one by dividing them by 255. After the pre-processing our images lookslike this::\
+
