@@ -18,7 +18,7 @@ We convert the images in to grayscale for reducing the computation, since the co
 
 **Convolutional Neural Network**
 
-We construck our Convolutional Neural Network with keras and it will have the following architecture:
+We build our Convolutional Neural Network with the following architecture:
 ![CNN_structure](https://user-images.githubusercontent.com/128620549/236953596-1af9a80b-befc-4441-9e1d-d43c53b01055.png)
 
 Before we feed our input data to the densely fully connected artificial neural network, we perform some procces to our data from the two convolutional blocks. In the two blocks, first we appply the convolution which extracts the  features out if the input image. The ReLU activation function will rectified our layer unit. Any value less than zero will be set to zero and any which is positive will be passed along. We apply the activation function to improve sparcity of the feature mass, which improves the performance of the network. Next, we down sampling the dimension of the image with the max pooling layer, which picks the max number of each pixel. The Droppout layer reduce the validation loss and the flatten layer in the last block reshape the data from two dimensions to one.\
